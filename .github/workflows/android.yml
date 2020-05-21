@@ -18,7 +18,11 @@ jobs:
         with:
           java-version: 1.8
       - name: Unit tests
-        run: bash ./gradlew test --stacktrace
+        run: |
+          java -version
+          echo $PATH
+          echo $JAVA_HOME
+          bash ./gradlew test --stacktrace
   
   build:
     if: "false"
