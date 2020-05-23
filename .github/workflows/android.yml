@@ -25,7 +25,7 @@ jobs:
           bash ./gradlew test --stacktrace
   
   build:
-    if: "false"
+    if: "true"
     name: Build and Upload APK
     needs: [test]
     runs-on: ubuntu-latest
